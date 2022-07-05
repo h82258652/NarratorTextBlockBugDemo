@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="NarratorTextBlockBugDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:NarratorTextBlockBugDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Content="Justin" />
+        <TextBlock
+            Width="200"
+            Height="50"
+            TextWrapping="Wrap">
+            <Hyperlink NavigateUri="https://www.baidu.com/">Hello world</Hyperlink>
+            <Run>Hello world wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</Run>
+            <Hyperlink NavigateUri="https://www.baidu.com/">Hello world</Hyperlink>
+        </TextBlock>
+        <Button Content="Rudy" />
+    </StackPanel>
+</Page>
